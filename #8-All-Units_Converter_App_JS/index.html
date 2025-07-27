@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Unit Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Start of HTML document -->
+	<div class="container">
+		<!-- Container for the unit converter -->
+		<!-- Heading for the unit converter -->
+		<h2>Unit Converter</h2>
+		<!-- Radio buttons for selecting the type of conversion -->
+		<div class="radio-group">
+			<label><input type="radio" name="conversionType" value="length" checked> <span>Length</span></label>
+			<label><input type="radio" name="conversionType" value="area"> <span>Area</span></label>
+			<label><input type="radio" name="conversionType" value="weight"> <span>Weight</span></label>
+			<label><input type="radio" name="conversionType" value="volume"> <span>Volume</span></label>
+			<label><input type="radio" name="conversionType" value="temperature"> <span>Temperature</span></label>
+			<label><input type="radio" name="conversionType" value="time"> <span>Time</span></label>
+		</div>
+		<!-- Label and input for entering the value to be converted -->
+		<label for="value">Enter Value:</label>
+		<input type="number" id="value" placeholder="Enter value">
+		<!-- Label and dropdown for selecting the unit from which to convert -->
+		<label for="unitFrom">From:</label>
+		<select id="unitFrom"></select>
+		<!-- Label and dropdown for selecting the unit to which to convert -->
+		<label for="unitTo">To:</label>
+		<select id="unitTo"></select>
+		<!-- Button to trigger the conversion -->
+		<button onclick="convert()">Convert</button>
+		<!-- Display the result of the conversion -->
+		<h3 id="result">Result: 0</h3>
+	</div>
+
+	<script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="background"></div>
+        <div class="row">
+            <div class="col select">
+                <p>Direction</p>
+                <select>
+                    <option value="to top">to top</option>
+                    <option value="to right top">to right top</option>
+                    <option value="to right">to right</option>
+                    <option value="to right bottom">to right bottom</option>
+                    <option value="to bottom">to bottom</option>
+                    <option value="to left bottom">to left bottom</option>
+                    <option value="to left">to left</option>
+                    <option value="to left top" selected>to left top</option>
+                </select>
+            </div>
+            <div class="col color">
+                <p>Colors</p>
+                <input type="color" value="#071952">
+                <input type="color" value="#0B666A">
+            </div>
+        </div>
+            <textarea class="textarea" disabled>background-image:linear-gradient(to left top, #071952, #0B666A);
+            </textarea>
+            <div class="buttons">
+                <button class="refresh">Refresh</button>
+                <button class="copy">Copy Code</button>
+            </div>
+     
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

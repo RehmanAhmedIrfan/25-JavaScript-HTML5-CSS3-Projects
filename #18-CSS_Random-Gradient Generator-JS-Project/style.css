@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans&family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #071952;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: white;
+    width: 500px;
+    padding: 25px;
+}
+
+.wrapper .background {
+    height: 200px;
+    background-image: linear-gradient(to left top, #071952, #0B666A);
+    width: 100%;
+}
+
+.wrapper .row {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.wrapper .row .col {
+    width: 50%;
+}
+
+.wrapper .row .col.select select {
+    padding: 5px 10px;
+}
+
+.wrapper .row .col.color {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper .row .col.color p {
+    width: 100%;
+}
+
+.wrapper .row .col.color input {
+    width: calc(50% - 20px);
+    border: none;
+    margin-right: 5px;
+}
+
+.wrapper .textarea {
+    width: 100%;
+    padding: 10px 10px;
+    resize: none;
+    height: 70px;
+    overflow: hidden;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+    opacity: 0.7;
+}
+
+.wrapper .buttons {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    justify-content: space-between;
+}
+
+.wrapper .buttons .refresh {
+    width: calc(50% - 10px);
+    background-color: #071952;
+    color: #fff;
+}
+
+.wrapper .buttons .copy {
+    width: calc(50% - 10px);
+    background-color: #0B666A;
+    color: #fff;
+}
+
+.wrapper .buttons button {
+    padding: 5px 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}

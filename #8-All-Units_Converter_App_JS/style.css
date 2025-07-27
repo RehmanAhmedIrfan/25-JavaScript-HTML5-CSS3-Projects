@@ -1,0 +1,191 @@
+/* Set the font family for the entire document */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Use flexbox to vertically and horizontally center content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Set the height of the body to 100% of the viewport height */
+    height: 100vh;
+    /* Remove default margin to ensure consistent layout */
+    margin: 0;
+    /* Apply a linear gradient background from left to right */
+    background: linear-gradient(to right, #8e9eab, #eef2f3);
+}
+
+/* Style for the main container */
+.container {
+    /* Set background color to white */
+    background-color: #fff;
+    /* Apply rounded corners to the container */
+    border-radius: 10px;
+    /* Add a subtle box shadow for a lifted effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add padding inside the container */
+    padding: 20px;
+    /* Set the maximum width of the container */
+    width: 300px;
+    /* Center the text inside the container */
+    text-align: center;
+}
+
+/* Style for the heading level 2 */
+h2 {
+    /* Set the text color to a dark shade */
+    color: #333;
+}
+
+/* Styling for labels */
+label {
+    /* Make labels block-level elements */
+    display: block;
+    /* Add some top margin for spacing between labels */
+    margin-top: 10px;
+    /* Make the text bold */
+    font-weight: bold;
+}
+
+/* Styling for input and select elements */
+input,
+select {
+    /* Set the width to 100% of the container */
+    width: 100%;
+    /* Add padding around the content inside the input/select */
+    padding: 8px;
+    /* Add margin on the top and bottom for spacing between elements */
+    margin: 5px 0;
+    /* Add a 1px solid border with border-radius for a subtle styling */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* Ensure the box-sizing is border-box for accurate sizing */
+    box-sizing: border-box;
+}
+
+/* Styling for buttons */
+button {
+    /* Set the width to 100% of the container */
+    width: 100%;
+    /* Add padding around the content inside the button */
+    padding: 10px;
+    /* Add top margin for spacing between the button and other elements */
+    margin-top: 20px;
+    /* Change the cursor to a pointer on hover for better UX */
+    cursor: pointer;
+    /* Apply a linear gradient background with two colors */
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    /* Set the text color to white */
+    color: white;
+    /* Remove the default button border */
+    border: none;
+    /* Apply a border-radius for rounded corners */
+    border-radius: 4px;
+    /* Set the font size for the button text */
+    font-size: 16px;
+    /* Add a smooth transition effect on background changes */
+    transition: background 0.3s ease;
+}
+
+/* Styling for button hover state */
+button:hover {
+    /* Change the background gradient on hover for a dynamic effect */
+    background: linear-gradient(to right, #0575e6, #021b79);
+}
+
+/* Styling for the result section */
+#result {
+    /* Set the font size for the result text */
+    font-size: 24px;
+    /* Set the text color to a dark shade */
+    color: #333;
+    /* Add top margin for spacing between the result and other elements */
+    margin-top: 20px;
+}
+
+/* Styling for the radio group */
+.radio-group {
+    /* Use flexbox to arrange items in a column */
+    display: flex;
+    flex-direction: column;
+    /* Align items to the start of the flex container */
+    align-items: flex-start;
+    /* Add top margin for spacing between the radio
+ group and other elements */
+    margin-top: 10px;
+}
+
+/* Styling for individual radio group labels */
+.radio-group label {
+    /* Use flexbox to align items in a row */
+    display: flex;
+    align-items: center;
+    /* Add bottom margin for spacing between radio group labels */
+    margin-bottom: 10px;
+    /* Change the cursor to a pointer on hover for better UX */
+    cursor: pointer;
+}
+
+/* Styling for radio group input elements */
+.radio-group input {
+    /* Add right margin for spacing between the input and text */
+    margin-right: 5px;
+}
+
+/* Styling for radio group custom-styled span element */
+.radio-group span {
+    /* Set the span as an inline-block element */
+    position: relative;
+    display: inline-block;
+    /* Add left padding for spacing before the radio group text */
+    padding-left: 25px;
+    /* Add right margin for spacing between the span and other elements */
+    margin-right: 5px;
+    /* Set the line height for proper vertical alignment */
+    line-height: 20px;
+}
+
+/* Styling for the circle before the radio group text */
+.radio-group span::before {
+    /* Set the content to an empty string for pseudo-element */
+    content: "";
+    /* Set the position to absolute within the relative span element */
+    position: absolute;
+    left: 0;
+    top: 2px;
+    /* Define dimensions and border-radius for the circular element */
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    /* Set the initial background color for the circle */
+    background-color: #11998e;
+    /* Add a smooth transition effect on background changes */
+    transition: background 0.3s ease;
+}
+
+/* Styling for the circle before the radio group text when checked */
+.radio-group input:checked+span::before {
+    /* Change the background color of the circle when the input is checked */
+    background-color: #0575e6;
+}
+
+/* Define a keyframe animation named 'fadeIn' */
+@keyframes fadeIn {
+
+    /* Specify the starting state of the animation */
+    from {
+        /* Set the opacity to 0, making the element fully transparent */
+        opacity: 0;
+    }
+
+    /* Specify the ending state of the animation */
+    to {
+        /* Set the opacity to 1, making the element fully visible */
+        opacity: 1;
+    }
+}
+
+/* Apply the 'fadeIn' animation to the 'container' class */
+.container {
+    /* Use the 'fadeIn' animation with a duration
+ of 1 second and ease timing function */
+    animation: fadeIn 1s ease;
+}

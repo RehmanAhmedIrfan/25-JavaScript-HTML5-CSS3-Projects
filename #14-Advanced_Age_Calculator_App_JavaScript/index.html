@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Age Calculator</h2>
+        <div class="input-box">
+            <input type="date" name="ageValue" id="ageValue" />
+            <img id="calculateAge" src="images/arrow-right.png">
+        </div>
+
+        <div class="output-box">
+            <label>Your Age is:-</label>
+            <div>
+                <strong id="currentAge">0 Years 0 Months 0</strong>
+                <img src="images/age.png" />
+            </div>
+
+            <label>Your Date Of Birth is:-</label>
+            <div>
+                <strong id="DOB">Monday, January 00, 0000</strong>
+                <img src="images/birthday-cake.png">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Your Already Lived</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>In Years</td>
+                        <td><b id="InYears">0</b> Years
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Months</td>
+                        <td><b id="InMonths">0</b> Months
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Weeks</td>
+                        <td><b id="InWeeks">0</b> Weeks
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Days</td>
+                        <td><b id="InDays">0</b> Days
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Hours</td>
+                        <td><b id="InHours">0</b> Hours
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Minutes</td>
+                        <td><b id="InMinutes">0</b> Minutes
+                        <td>
+                    </tr>
+
+                    <tr>
+                        <td>In Seconds</td>
+                        <td><b id="InSeconds">0</b> Seconds
+                        <td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div>
+                <b id="nextBirthDaysLeft">0</b> Days Left for your Next Birthday
+                <img src="images/confetti.png" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
