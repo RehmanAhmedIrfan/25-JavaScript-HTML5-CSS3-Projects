@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Your ICS Marks + Percentage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="container">
+        <div class="box">
+          <h2>Enter Your ICS Marks</h2>
+          <form
+            onsubmit="calculateMarks(event)"
+            class="calculate-form"
+            id="calculateForm"
+          >
+            <input
+              type="number"
+              required
+              min="0"
+              max="200"
+              name="maths"
+              placeholder="Maths"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="200"
+              name="english"
+              placeholder="English"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="200"
+              name="urdu"
+              placeholder="Urdu"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="200"
+              name="computer"
+              placeholder="Computer Science"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="200"
+              name="physics"
+              placeholder="Physics"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="50"
+              name="pakstudies"
+              placeholder="Pak-Studies"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="50"
+              name="islamiceducation"
+              placeholder="Islamic Education"
+            />
+            <input
+              type="number"
+              required
+              min="0"
+              max="100"
+              name="translationofholyquran"
+              placeholder="Translation Of Holy Quran"
+            />
+            <button type="submit" class="primary-btn">Calculate</button>
+          </form>
+          <p id="result" class="result"></p>
+        </div>
+        <div class="content">
+          <h2>Calculate Your</h2>
+          <h1>Percentage</h1>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
